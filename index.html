@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<style>
+	#title {
+		color: red;
+	}
+	#title.blue {
+		color: blue;
+	}
+</style>
+<script src="../p5/p5.min.js"></script>
+<script src="sketch.js"></script>
+</head>
+
+<body>
+    <div id="title">Hello, World!</div>
+    <script type="text/javascript">
+    setTimeout(function() {
+        var element = document.getElementById("title");
+        element.innerHTML = "Hello, Jed!";
+        element.className = "blue";
+    }, 5000);
+    </script>
+</body>
+
+</html>
